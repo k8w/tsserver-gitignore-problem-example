@@ -1,2 +1,10 @@
 ### Problem
-In index.ts , you can't get hint for `Test` in `lib/Test.ts`.
+If .gitignore is this:
+```
+/lib
+```
+It will get this after reindex:
+> [TypeScript Importer]: Symbols: 0
+
+If no .gitignore, it will get this after reindex:
+> [TypeScript Importer]: Symbols: 1
